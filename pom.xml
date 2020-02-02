@@ -83,8 +83,10 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <schemaDirectory>${project.basedir}/src/main/resources/</schemaDirectory>
+                    <schemaDirectory>${project.basedir}/src/main/resources/xsd/</schemaDirectory>
                     <outputDirectory>${project.basedir}/src/main/java</outputDirectory>
+                    <bindingDirectory>${project.basedir}/src/main/resources/xjb/</bindingDirectory>
+                    <extension>true</extension> <!-- without that flag xjc does not work for binding files -->
                     <clearOutputDir>false</clearOutputDir>
                 </configuration>
                 <dependencies>

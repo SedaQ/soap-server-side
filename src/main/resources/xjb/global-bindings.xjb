@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jaxb:bindings
+        version="2.1"
+        xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+        xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        jaxb:extensionBindingPrefixes="xjc">
+
+    <jaxb:globalBindings>
+        <xjc:javaType name="java.time.LocalDateTime" xmlType="xs:dateTime"
+                      adapter="org.sedaq.soap.adapters.LocalDateTimeXmlAdapter"/>
+        <xjc:javaType name="java.time.LocalDate" xmlType="xs:date"
+                      adapter="org.sedaq.soap.adapters.LocalDateXmlAdapter"/>
+    </jaxb:globalBindings>
+</jaxb:bindings>
